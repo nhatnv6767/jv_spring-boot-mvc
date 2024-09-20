@@ -1,7 +1,7 @@
-package com.example.demo.Service;
+package com.example.demomvc.Service;
 
-import com.example.demo.Repos.ProductRepository;
-import com.example.demo.model.Product;
+import com.example.demomvc.Repos.ProductRepository;
+import com.example.demomvc.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +16,7 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Product getProductById(int id){
+    public Product getProductById(long id){
         return productRepository.findById(id).orElse(null);
     }
 
@@ -24,7 +24,7 @@ public class ProductService {
         return productRepository.save(product);
     }
 
-    public void deleteProduct(int id){
+    public void deleteProduct(long id){
         productRepository.deleteById(id);
     }
 }

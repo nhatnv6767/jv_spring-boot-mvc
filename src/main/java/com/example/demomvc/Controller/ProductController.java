@@ -1,12 +1,13 @@
-package com.example.demo.Controller;
+package com.example.demomvc.Controller;
 
-import com.example.demo.Service.ProductService;
-import com.example.demo.model.Product;
+import com.example.demomvc.Service.ProductService;
+import com.example.demomvc.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
